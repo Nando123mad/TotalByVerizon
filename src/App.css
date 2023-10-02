@@ -14,7 +14,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
+  background-image: url('./assets/images/img3.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +28,334 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#vid {
+  /* width:100%;
+  height:auto; */
+  position: fixed;
+  /* right: -15px; */
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  padding-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn {
+  width: 200px;
+  font-size: 50px;
+  padding: 100px;
+  border: none;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnClkd {
+  width: 200px;
+  font-size: 50px;
+  padding: 100px;
+  border: none;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+  background-color: black !important;
+}
+
+.btnTxtClkd {
+  color: #fff !important;
+}
+
+.btnSm {
+  width: 200px;
+  font-size: 50px;
+  padding: 100px;
+  border: none;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px !important;
+  margin: 3px !important;
+  max-width: 60px;
+  border-width: 0px !important;
+}
+
+.btnSmClkd {
+  width: 200px;
+  font-size: 50px;
+  padding: 100px;
+  border: none;
+  background: #fff;
+  color: #fff;
+  background-color: black !important;
+  cursor: pointer;
+  border-radius: 50px !important;
+  margin: 3px !important;
+  max-width: 60px;
+  border-width: 0px !important;
+}
+
+
+.cntrBtn {
+  text-transform: none !important;
+  width: 19.166vw;
+  bottom: 0;
+  position: absolute;
+  font-size: 50px;
+  padding: 100px;
+  border: none;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.assistSubCntr {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: end;
+  /* lift the overall container with a bottom margin to not disturb the fade animation*/
+  margin-bottom: 28%;
+}
+
+.assistSubCntrSm {
+  margin: 12% 2%;
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.assistTxt {
+  /* manually set up the font size and weight to not disturb the themes variant */
+  font-weight: 500 !important;
+  font-size: 1.6rem !important;
+
+}
+
+
+
+.assistTxtTDiv {
+  position: absolute;
+  bottom: 43%;
+  left:-18%;
+  /* manually set up the font size to not disturb the themes variant */
+  text-align: right;
+}
+
+.assistTxtT {
+  /* manually set up the font size to not disturb the themes variant */
+  font-size: 3rem !important;
+  line-height: 2rem !important;
+}
+
+.assistTxtSDiv {
+  position: absolute;
+  bottom: 45%;
+  right: -17%;
+  /* manually set up the font size to not disturb the themes variant */
+  text-align: left;
+}
+
+.assistTxtS {
+  /* manually set up the font size to not disturb the themes variant */
+  font-size: 3rem !important;
+  line-height: 2rem !important;
+}
+
+.container {
+  margin: 0 !important;
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  height: 5.052;
+
+  padding: 13px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  /*the alpha value controls the transparency*/
+  background: rgba(255, 255, 255, 0.3);
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /* Adding our borders*/
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.smContainer {
+  position: fixed;
+  top: 0;
+  width: 21.851vw;
+  height: 17.239vh;
+  padding: 15px 14px !important;
+  text-align: left;
+  display: flex;
+  position: relative;
+  /* Setting the size of the upper layer to 80% of the screen size*/
+  align-items: center;
+  justify-content: space-between;
+
+  /*the alpha value controls the transparency*/
+  background: rgba(255, 255, 255, 0.3);
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /* Adding our borders*/
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.circleContainer {
+  position: fixed;
+  top: 0;
+  padding: 15px 14px !important;
+  text-align: center;
+  display: flex;
+  position: relative;
+  /* Setting the size of the upper layer to 80% of the screen size*/
+  align-items: center;
+  justify-content: center;
+
+  /*the alpha value controls the transparency*/
+  background: rgba(255, 255, 255, 0.3);
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /* Adding our borders*/
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.circleBldTxt {
+  line-height: 1.3 !important;
+}
+
+.circleTxt {
+  line-height: 1.3 !important;
+  padding-top: 7%;
+}
+
+.circleBtn {
+  text-transform: none !important;
+  position: absolute !important;
+  bottom: 5% !important;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  padding: 100px;
+  border: none;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.singleCntr {
+  position: absolute;
+
+  top: 45%;
+  transform: translate(0%, -50%);
+
+  right: 6.48vw;
+  text-align: left;
+  padding: 13px;
+
+  /*the alpha value controls the transparency*/
+  background: rgba(255, 255, 255, 0.3);
+
+  /* This controls the blurring effect*/
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+
+  /*Adding the shadow*/
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+
+  /* Adding our borders*/
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.contentOptions {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+}
+
+.content {
+  /* width: 90.833vw; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.BtnCntrDtls {
+  border: 2px solid black;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+
+
+.btn:hover {
+  /* background: #ddd;
+  color: black; */
+}
+
+.disneyDiv {
+  text-align: right;
+  position: absolute;
+  right: 14px;
+}
+
+.disneyLogo {
+  width: 6.064vw;
+}
+
+.detailsLogo {
+  width: 3.47vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TESTING PURPOUSES************************* */
+.testImg {
+  width: 100% !important;
+  height: 100% !important;
 }
